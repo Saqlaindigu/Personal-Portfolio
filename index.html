@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6fd1f165e9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Colorful Infinite Logo Design.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>
+            Hi, I am <span>Saqlain</span><br />Yousuf From Jammu & Kashmir,
+            India
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------about------------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Welcome to my website! I'm thrilled to have you here. I am a
+              passionate and dedicated software engineer with a strong expertise
+              in web and app development. My journey in the world of software
+              engineering began with a fascination for technology and a
+              curiosity to explore its limitless possibilities. Over time, I
+              honed my skills and acquired a deep understanding of various
+              programming languages, frameworks, and tools that enable me to
+              bring ideas to life. One area that particularly captivates me is
+              artificial intelligence. The potential it holds to revolutionize
+              industries and enhance the human experience is truly
+              awe-inspiring. I have invested considerable time and effort into
+              understanding AI concepts and staying up to date with the latest
+              advancements in the field. Integrating AI into web and app
+              development allows me to create intelligent and dynamic solutions
+              that can adapt and learn from user interactions. I enjoy working
+              closely with clients and stakeholders to understand their unique
+              needs and translate them into practical and elegant software
+              solutions. I am excited to share my knowledge, experiences, and
+              insights with you through this website. Whether you're looking for
+              web development services, app development guidance, or want to
+              dive deeper into the fascinating world of artificial intelligence,
+              you've come to the right place. Together, let's embark on a
+              journey to create innovative and impactful software solutions that
+              shape the future. Thank you for visiting, and I look forward to
+              connecting with you soon!
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Fresher</span><br />Completed B.tech in 2023</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2019-2023</span><br />(B.tech) Punjab Technical
+                  University (IKGPTU)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------services--------------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Welcome to my remarkable web development service, where I
+              transform your digital vision into reality with precision and
+              expertise. As a passionate and dedicated web developer, I take
+              pride in delivering cutting-edge websites that leave a lasting
+              impression on your visitors and drive your business forward.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Development (Android and iOS)</h2>
+            <p>
+              Welcome to my exceptional app development service, where I
+              transform your innovative ideas into reality on both Android and
+              iOS platforms. With my expertise in mobile app development, I
+              empower you to reach your target audience directly on their
+              smartphones, delivering a seamless and immersive user experience
+              that sets your app apart.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------Portfolio----------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you with the talented people around the world.
+                Download it from Play store or App store.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                You can listen to music offline and online of Artists around the
+                world. You can download it from Play store or App store.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                You can do Shopping from the comfort of your home through this
+                app. Download it from Play store or App store.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- --------contact---------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> saqlainyousuf60@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone-volume"></i> +91 8899096031</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/Saqlaindigu2?mibextid=LQQJ4d"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/Saqlain__Digu"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/saqlaindigu/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://in.linkedin.com/in/saqlain-digu-3789371b0"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.youtube.com/channel/UCps20hJS1Yaui4vm2_Yy_Pg"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Saqlain. Made with <i class="fa-solid fa-heart"></i> by
+          Saqlain
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzulJedOGyHk1VoyrBKXf464twJSaTebRuwoOVSAgfr9YZwJ5HAvekwerbBKfZAuHeQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+  </body>
+</html>
